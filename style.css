@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+:root {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  --color-primary: #4c4c4c;
+}
+
+body {
+  margin: 0;
+}
+.search-content {
+  height: 100vh;
+  /* background-color: lightblue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.search-content > h2 {
+  font-size: 3rem;
+  color: var(--color-primary);
+}
+.group {
+  position: relative;
+}
+.fas.fa-search{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 20px 10px 10px;
+  color: #bfbfbf; 
+}
+.fas.fa-search:hover {
+  cursor: pointer;
+  color: #525151;
+}
+.input-control {
+  padding: 10px;
+  outline: 2px solid #bfbfbf;
+  border: none;
+  width: 40vw;
+  border-radius: 1rem;
+  box-shadow: 5px 6px 3px #c9c7c7;
+}
+.input-control:focus {
+  color: #525151;
+}
+.result-search {
+  display: none;
+  height: 500px;
+  background-color: lightcoral;
+}
+
+@media (min-width: 450px) and (max-width: 800px) {
+  .search-content > h2 {
+    font-size: 2.2rem;
+  }
+  .input-control {
+    width: 70vw;
+  } 
+}
+@media (max-width: 450px) {
+  .search-content > h2 {
+    font-size: 1.8rem;
+  }
+  .input-control {
+    width: 80vw;
+  }
+}
